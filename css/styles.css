@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: miFuente;
+    font-family: miFuente !important;
 }
 .logo-principal{
     display: flex;
@@ -24,36 +24,38 @@ body{
 }
 nav ul li a{
     text-decoration: none;
-    color: rgb(17, 6, 6);
+    color: black !important;
 }
 
 .menu-iconos{
+    display: flex;
+    align-items: center;
+}
+.menu-iconos li{
     display: inline;
-    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.menu-iconos ul{
+    margin:0px 0px;
 }
 
 .menu-principal{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 30px;
-    margin-right: 30px;
-    margin-left: 350px;
-}
-
-.menu-derecha{
-    display: flex;
-    gap: 20px;
-}
-
-.menu-derecha ul{
-    display: flex;
-    gap: 20px;
 }
 
 .new-collection{
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+}
+
+.new-collection div { 
+    margin: 0px 20px;
 }
 
 .banner{
@@ -85,10 +87,10 @@ nav ul li a{
 
 .estilos-de-traje-de-baño{
     display: flex;
-    position: relative;
     top: 300px;
     justify-content: center;
     text-transform: uppercase;
+    position:relative !important;
 }
 
 .novedades-text{
@@ -232,6 +234,12 @@ button{
     border-style: ridge;
     border-radius: 10px;
     border-color: crimson;
+    
+}
+
+.imagen-de-producto:hover{
+    transition: 1.5s;
+    transform: rotateY(360deg);
 }
 
 .nueva-coleccion-titulo{
@@ -280,47 +288,83 @@ h3{
     font-size: x-large;
     text-transform: uppercase;
     margin-top: 30px;
+    
 }
 
-.imagenes-bordados{
+.imagenes-trajes-de-bano{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
     margin-top: 30px;
-}
-
-.imagenes-lisos{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    padding-left: 0px;
 }
 
 
-.imagenes-kids{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    margin-top: 30px;
+.imagenes-trajes-de-bano img:hover{
+    transform: scale(1.1);
+    transition: 2s;
 }
 
-.imagenes-men{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    margin-top: 30px;
+@media (min-width: 768px) and (max-width: 1024px){
+    .new-collection-text{
+        top: 400px;
+        font-size: 25px;
+    }
 }
 
-.imagenes-estampados{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    margin-top: 30px;
+@media (min-width: 1440px){
+    .new-collection-text{
+        top: 480px;
+    }
 }
 
-.imagenes-enteros{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    margin-top: 30px;
+@media (min-width: 426px) and (max-width: 767px){
+    .new-collection-text{
+        top: 400px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 425px){
+    .new-collection-text{
+        top: 340px;
+        font-size: 18px;
+    }
+
+    .estilos-de-traje-de-baño{
+        top: 150px;
+        font-size: 18px;
+    }
+    .novedades-text{
+        font-size: 18px;
+    }
+    .novedades div{
+        margin-bottom: 20px;
+    }
+    .copy{
+        font-size: 10px;
+    }
+    .footer-logo img{
+        height: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    .trajes-de-baño-titulo{
+        font-size: 20px;
+    }
+    .imagenes-trajes-de-bano img{
+        margin-bottom: 20px;
+        height: 200px;
+        }
+    .titulos{
+        font-size: 18px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .imagenes-trajes-de-bano img{
+    height: 200px;    
+    }
+
 }
