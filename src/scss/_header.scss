@@ -1,0 +1,56 @@
+@import "./variables";
+
+.menu-iconos{
+    display: flex;
+    align-items: center;
+    ul{
+        margin:0px 0px;
+        li{
+            display: inline;
+            list-style: none;
+            text-decoration: none;
+            margin: 0px 5px;
+        }
+    }
+}
+
+nav{
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: black !important; 
+            }
+        }
+    }
+}
+
+.menu{
+    display: inline;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.logo-principal{
+    display: flex;
+    justify-content: center;
+    margin-top: $margin-top;
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: $margin-top;
+}
+
+.new-collection-text{
+    position: absolute;
+    top: 540px;
+    text-transform: uppercase;
+}
+
+.novedades button{
+    display:flex;
+    text-align: center;
+    margin-left: 90px;
+    }

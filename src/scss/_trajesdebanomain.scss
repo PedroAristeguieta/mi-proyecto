@@ -1,0 +1,23 @@
+@import "./variables";
+
+.imagenes-trajes-de-bano{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: $margin-top;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+
+.imagenes-trajes-de-bano img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.trajes-de-baño-titulo{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: $margin-top;
+    font-size:xx-large;
+}

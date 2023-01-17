@@ -1,0 +1,27 @@
+@import "./variables";
+
+.accesorios-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: $margin-top;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+.accesorios-button{
+    display: flex;
+    margin-left: 160px;
+}
+
+.accesorios-text{
+    display: flex;
+    justify-content: center;
+}
+
+.accesorios-titulo{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: $margin-top;
+}

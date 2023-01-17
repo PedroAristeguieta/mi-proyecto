@@ -1,0 +1,11 @@
+.imagen-de-producto{
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: crimson;
+    
+}
+
+.imagen-de-producto:hover{
+    transition: 1.5s;
+    transform: rotateY(360deg);
+}

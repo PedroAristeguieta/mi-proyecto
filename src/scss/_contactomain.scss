@@ -1,0 +1,46 @@
+@import "./variables";
+
+.contact-form{
+    border-style: none;
+    height: fit-content;
+    width: fit-content;
+    text-align-last: right;
+}
+
+.contacto{
+    display: flex;
+    column-gap: 20px;
+    max-width: 2500px;
+    justify-content: center;
+    margin-top: $margin-top;
+}
+
+.contact-image{
+    display: flex;
+    height: 232px;
+    width: 200px;
+    }
+
+.contact-button-div{
+    margin-top: 20px;
+    align-items:center;
+}
+
+.contact-button{
+    padding: 15px;
+    border: none;
+    color: black;
+
+}
+
+.contact-button:hover{
+    background-color: white;
+    color: brown;
+}
+
+.contacto-titulo{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: $margin-top;
+}
